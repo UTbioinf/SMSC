@@ -86,5 +86,3 @@ will use 8 threads to produce a corrected-assembly. The result is in the file `N
 * Usage: as before (change path in `run_nucmer.sh`)
 
 ---
-
-# SMSC
