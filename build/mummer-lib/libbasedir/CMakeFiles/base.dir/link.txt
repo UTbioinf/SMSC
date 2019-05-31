@@ -1,2 +1,0 @@
-/afs/crc.nd.edu/user/s/szhu3/loonlocal_intel/linuxbrew/bin/ar qc libbase.a  CMakeFiles/base.dir/cleanMUMcand.c.o CMakeFiles/base.dir/multiseq.c.o CMakeFiles/base.dir/safescpy.c.o CMakeFiles/base.dir/space.c.o CMakeFiles/base.dir/clock.c.o CMakeFiles/base.dir/mapfile.c.o CMakeFiles/base.dir/procopt.c.o CMakeFiles/base.dir/seterror.c.o
-/afs/crc.nd.edu/user/s/szhu3/loonlocal_intel/linuxbrew/bin/ranlib libbase.a

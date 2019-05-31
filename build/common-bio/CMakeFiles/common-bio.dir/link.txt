@@ -1,2 +1,0 @@
-/afs/crc.nd.edu/user/s/szhu3/loonlocal_intel/linuxbrew/bin/ar qc libcommon-bio.a  CMakeFiles/common-bio.dir/Aligner.cpp.o CMakeFiles/common-bio.dir/Consensus.cpp.o CMakeFiles/common-bio.dir/Multiseq.cpp.o CMakeFiles/common-bio.dir/Progress.cpp.o CMakeFiles/common-bio.dir/baseheader.cpp.o CMakeFiles/common-bio.dir/nucleotide.cpp.o CMakeFiles/common-bio.dir/util.cpp.o
-/afs/crc.nd.edu/user/s/szhu3/loonlocal_intel/linuxbrew/bin/ranlib libcommon-bio.a
