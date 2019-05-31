@@ -10,13 +10,14 @@ Since 2.2.1, we use cmake to compile SMSC.
 * Blasr
 * Lemon
 * mhap
+* muscle
 
 ## Install
 
 Before installing the program, you need to modify the `config.sh` by following steps:
 
 * `cd smsc/src.2.2.1`
-* open `config.sh`, and modify the configurations to the absolute directory where you install MUMmer 
+* open `config.sh`, and modify the configurations to the absolute directory where you install `MUMmer`, `mhap` and `muscle` 
 
 Then go to the `smsc` folder, do the following things:
 

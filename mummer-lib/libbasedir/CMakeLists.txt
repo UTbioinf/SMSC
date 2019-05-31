@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.6)
 
-project(mummer_libbasedir)
+project(mummer_libbase)
 
 option(install_submodule "Install libbase.a" OFF)
 

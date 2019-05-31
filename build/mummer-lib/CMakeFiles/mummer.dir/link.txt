@@ -1,0 +1,2 @@
+/afs/crc.nd.edu/user/s/szhu3/loonlocal_intel/linuxbrew/bin/ar qc libmummer.a  CMakeFiles/mummer.dir/delta-filter.cpp.o CMakeFiles/mummer.dir/mgaps.cpp.o CMakeFiles/mummer.dir/postnuc.cpp.o CMakeFiles/mummer.dir/sw_align.cpp.o CMakeFiles/mummer.dir/delta.cpp.o CMakeFiles/mummer.dir/nucmer.cpp.o CMakeFiles/mummer.dir/prenuc.cpp.o CMakeFiles/mummer.dir/tigrinc.cpp.o CMakeFiles/mummer.dir/findmaxmat.c.o
+/afs/crc.nd.edu/user/s/szhu3/loonlocal_intel/linuxbrew/bin/ranlib libmummer.a
