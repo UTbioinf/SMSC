@@ -1,0 +1,15 @@
+/* 
+  This file is generated. Do not edit. 
+*/
+
+#ifndef PROTODEF_H
+#define PROTODEF_H
+
+#include <sys/types.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "types.h"
+#include "optdesc.h"
+#include "multidef.h"
+#include "mumcand.h"
+#endif
