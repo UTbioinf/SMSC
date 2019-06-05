@@ -29,6 +29,8 @@
 #include "mummer_api.h"
 #include "msa_consensus.h"
 
+#include "version.h"
+
 using namespace std;
 
 #ifdef DEBUG_CHGCNT
@@ -1355,7 +1357,7 @@ void do_alignment_and_consensus(loon::Multiseq& ref, loon::Multiseq& qry,
 
 void help_msg(char* exec)
 {
-    cerr << "Version: 2.2.1 !!!" << endl;
+    cerr << "Version: " << SMSC_VERSION << " !!!" << endl;
     cerr << "Usage: " << exec << " [options] <ref_file> <qry_file>" << endl;
     cerr << "Options:" << endl;
     cerr << "\t-p prefix        set prefix for output files (default smsc)" << endl;

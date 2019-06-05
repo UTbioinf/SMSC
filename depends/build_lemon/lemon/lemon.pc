@@ -1,0 +1,10 @@
+prefix=/home/loon/Loon/github/UTbioinf/SMSC/build/local/libexec/lemon
+exec_prefix=/home/loon/Loon/github/UTbioinf/SMSC/build/local/libexec/lemon/bin
+libdir=/home/loon/Loon/github/UTbioinf/SMSC/build/local/libexec/lemon/lib
+includedir=/home/loon/Loon/github/UTbioinf/SMSC/build/local/libexec/lemon/include
+
+Name: LEMON
+Description: Library for Efficient Modeling and Optimization in Networks
+Version: 1.3.1
+Libs: -L${libdir} -lemon     
+Cflags: -I${includedir}

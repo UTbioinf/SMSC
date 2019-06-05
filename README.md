@@ -1,38 +1,23 @@
-# Update 2.2.1
-
-* **WARNING:** restrict the running instances of MHAP to at most 8. The mhap.jar keeps crashing if there are 16 instances.
-
-Since 2.2.1, we use cmake to compile SMSC.
-
 ## dependency
 
-* MUMmer: There is a bug in MUMmer and you need to fix it by your self. `cd <MUMmer directory>/src/tigr` and open `mgaps.cc`, in the `main()` function, change `char line [MAX_LINE];` and `char save [MAX_LINE];` to `char line [MAX_LINE] = {0};` and `char save [MAX_LINE] = {0};`, respectively. This bug occurs if the input file or input pipe is empty.
-* Blasr
+* Csh: required by MUMmer
+* Blasr: please install this and make sure you can execute the command `blasr -h`
+* Python 2.7
+
+The following dependencies are included in this repo for easier installation:
+
+* MUMmer (with bug fixed)
 * Lemon
 * mhap
 * muscle
 
 ## Install
 
-Before installing the program, you need to modify the `config.sh` by following steps:
-
-* `cd smsc/src.2.2.1`
-* open `config.sh`, and modify the configurations to the absolute directory where you install `MUMmer`, `mhap` and `muscle` 
-
-Then go to the `smsc` folder, do the following things:
-
-```bash
-mkdir build && cd build
-cmake -DCMAKE_INSTALL_PREFIX:PATH=$PWD/local -DCMAKE_BUILD_TYPE=Release ..
-make
-make install
-```
-
-The `smsc` will then be installed in `local/bin`
-
-**Notice:** the `make install` is required so that the script `run_nucmer.sh` will be accessed correctly by `smsc`. To change the install location, simply change `$PWD/local` to the location you prefer.
+Run `python install.py`, this will install `smsc` to the `build/local/bin` directory inside this repository. If you want to install it to `<local>/bin/`, run `python install.py --prefix <local>`
 
 # run
+
+Go to the directory of `smsc` (default: `build/local/bin`)
 
 Type `./smsc -h` to see the running options
 
@@ -78,6 +63,10 @@ will use 8 threads to produce a corrected-assembly. The result is in the file `N
 
 
 ---
+
+# Update 2.2.1
+
+* **N.B.:** We restrict the running instances of MHAP to at most 8 on purpose. The mhap.jar keeps crashing if there are 16 instances.
 
 # Update 2.1.0
 * deal with N's in the genome sequence
