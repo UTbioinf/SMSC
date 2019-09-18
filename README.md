@@ -15,6 +15,11 @@ The following dependencies are included in this repo for easier installation:
 
 Run `python install.py`, this will install `smsc` to the `build/local/bin` directory inside this repository. If you want to install it to `<local>/bin/`, run `python install.py --prefix <local>`
 
+### Known Issue
+
+* `gcc-9.1`, or the clang linked to this version of gcc has a problem compiling `Lemon` (see Issue #2). If this is the case, please either use a lower version gcc (gcc-4.8, gcc-6, gcc-7, gcc-8.3 have been tested), or install Lemon by yourself. If you choose to install Lemon by yourself, please use the command `ls $(dirname $(which dimacs-solver))/../share/lemon/cmake/LEMONConfig.cmake` to make sure the `LEMONConfig.cmake` file exists.
+
+
 # run
 
 Go to the directory of `smsc` (default: `build/local/bin`)
