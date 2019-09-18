@@ -44,6 +44,12 @@ def install_lemon(lemon_dir, libexec):
     return os.path.join(install_dir, "share", "lemon", "cmake")
 
 def check_lemon(libexec):
+    lemon_path = command_path("dimacs-solver")
+    if lemon_path:
+        lemon_path = os.path.dirname( lemon_path )
+        lemon_path = os.path.normpath( os.path.join(lemon_path, "..", "share", "lemon", "cmake") )
+        if os.path.isfile( os.path.join(lemon_path, "LEMONConfig.cmake") ):
+            return lemon_path
     lemon_path = os.path.normpath( os.path.join(libexec, "lemon", "share", "lemon", "cmake") )
     if os.path.isfile( os.path.join(lemon_path, "LEMONConfig.cmake") ):
         return lemon_path
